@@ -18,36 +18,58 @@
   </head>
   <body>
     <header>
-      <a href="http://ryog.github.io/" class="btn">
-        <h1>Ryoji's site</h1>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#skill">Skill</a></li>
-        </ul>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://ryog.github.io/">Ryoji's site</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#skill">Skill</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <h1>Ryoji Yoshioka</h1>
-    <section>
-      <h1>Details</h1>
-      <article>
-        <h2>Profile</h2>
-        <p>article p</p>
-      </article>
-      <article>
-        <h2>Skill</h2>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>Amazon Web Service</li>
-          <li>Vim</li>
-          <li>Ansible</li>
-        </ul>
-      </article>
-    </section>
-    <footer>
-      <p>Presented by <address>Ryoji Yoshioka</address></p>
-    </footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>Ryoji Yoshioka <small>Subtext for header</small></h1>
+          </div>
+          <section>
+            <article id="profile">
+              <h2>Profile</h2>
+              <dl class="dl-horizontal">
+                <dt>Name<dt>
+                <dd>Ryoji Yoshioka</dd>
+                <dt>Sex</dt>
+                <dd>Male</dd>
+              </dl>
+            </article>
+            <article id="skill">
+              <h2>Skill</h2>
+              <dl class="dl-horizontal">
+                <dt>Language<dt>
+                <dd>Ruby</dd>
+                <dd>JavaScript</dd>
+                <dt>Flamework</dt>
+                <dd>Ruby on Rails</dd>
+              </dl>
+            </article>
+          </section>
+          <footer>
+          </footer>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
