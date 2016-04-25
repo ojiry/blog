@@ -19,3 +19,4 @@ github_username: ojiry
 
 # Build settings
 markdown: kramdown
+exclude: ['CNAME', 'Capfile', 'Gemfile', 'Gemfile.lock', 'config.ru', 'puma.rb']
