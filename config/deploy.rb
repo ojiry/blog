@@ -2,7 +2,7 @@
 lock '3.4.1'
 
 set :application, 'blog'
-set :repo_url, 'git@github.com:ojiry/blog.git'
+set :repo_url, 'https://github.com/ojiry/blog.git'
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')

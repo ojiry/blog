@@ -1,0 +1,12 @@
+nginx:
+  build: containers/nginx
+  ports:
+    - '8080:80'
+  volumes_from:
+    - datastore
+
+datastore:
+  build: containers/datastore
+  command: /bin/echo hello 
+
+jekyll:
