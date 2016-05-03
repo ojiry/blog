@@ -8,6 +8,5 @@ gem 'rack-jekyll', github: 'adaoraul/rack-jekyll'
 
 group :development do
   gem 'capistrano'
-  gem 'capistrano-bundler'
   gem 'capistrano3-puma'
 end
