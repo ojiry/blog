@@ -1,4 +1,12 @@
-nginx:
-  build: ./docker/nginx
-  ports:
-    - '8080:80'
+version: '2'
+services:
+  ruby:
+    build: ./docker/ruby
+    volumes:
+      - .:/blog
+
+  nginx:
+    build: ./docker/nginx
+    ports:
+      - '8080:80'
+
