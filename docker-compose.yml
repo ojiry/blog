@@ -3,12 +3,14 @@ services:
   ruby:
     build: ./docker/ruby
     volumes:
-      - .:/blog
+      - /var/www/blog
 
   nginx:
     build: ./docker/nginx
-    ports:
-      - '8080:80'
     depends_on:
       - 'ruby'
+    ports:
+      - '8080:80'
+    volumes:
+      - /var/www/blog
 
