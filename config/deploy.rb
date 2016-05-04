@@ -11,6 +11,9 @@ set :repo_url, 'https://github.com/ojiry/blog.git'
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
+set :rbenv_type, :user
+set :rbenv_ruby, '2.3.1'
+
 namespace :deploy do
 
   after :restart, :clear_cache do
