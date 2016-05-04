@@ -4,4 +4,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
-gem 'capistrano', group: :development
+group :development do
+  gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
+end
