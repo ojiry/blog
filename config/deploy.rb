@@ -15,14 +15,11 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.3.1'
 
 namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
+  after 'symlink:release', :build_html do
+    on roles(:web) do
+      within current_path do
+        execute :jekyll, 'build'
+      end
     end
   end
-
 end
