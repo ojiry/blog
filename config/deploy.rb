@@ -15,11 +15,13 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.3.1'
 
 namespace :deploy do
-  after 'symlink:release', :build_html do
-    on roles(:web) do
+
+  after 'symlink:release', :build do
+    on roles(:app) do
       within current_path do
         execute :jekyll, 'build'
       end
     end
   end
+
 end
