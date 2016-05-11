@@ -1,18 +1,20 @@
 version: '2'
 services:
-  # ruby:
-  #   build: .
-  #   volumes:
-  #     - /var/www/blog
+  ruby:
+    image: ruby:2.3.1
+    command: /bin/bash -c 'bundle install; bundle exec jekyll build'
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
 
   nginx:
     image: nginx
-    # depends_on:
-    #   - 'ruby'
-    environment:
-      - NGINX_HOST=blog.ojiry.com
-      - NGINX_PORT=80
     ports:
       - '8080:80'
     volumes:
       - /var/www/blog/current/_site:/usr/share/nginx/html
+    environment:
+      - NGINX_HOST=blog.ojiry.com
+      - NGINX_PORT=80
+    depends_on:
+      - 'ruby'
