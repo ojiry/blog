@@ -18,6 +18,7 @@ exclude:
   - Dockerfile
   - Gemfile
   - Gemfile.lock
+  - Vagrantfile
   - config
   - docker-compose.yml
 
