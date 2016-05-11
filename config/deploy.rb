@@ -20,7 +20,7 @@ namespace :deploy do
     on roles(:app) do
       within current_path do
         execute :bundle, :exec, :jekyll, 'build'
-        execute 'docker-compose up -d'
+        # execute 'docker-compose up -d'
       end
     end
   end
