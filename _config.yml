@@ -15,7 +15,6 @@ permalink: pretty
 markdown: kramdown
 exclude:
   - Capfile
-  - Dockerfile
   - Gemfile
   - Gemfile.lock
   - README.md 
