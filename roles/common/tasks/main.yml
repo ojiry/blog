@@ -14,6 +14,9 @@
 - name: create deploy user
   user: name=deploy group=deploy
 
+- name: create .ssh directory
+  file: path=/home/deploy/.ssh state=directory owner=deploy group=deploy mode=755
+
 - name: create authorized_keys file
   copy: src=authorized_keys dest=/home/deploy/.ssh/authorized_keys
 
