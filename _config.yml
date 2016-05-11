@@ -18,9 +18,14 @@ exclude:
   - Dockerfile
   - Gemfile
   - Gemfile.lock
+  - REVISION
   - Vagrantfile
   - config
   - docker-compose.yml
+  - group_vars
+  - hosts
+  - roles
+  - site.yml
 
 # Plugin settings
 gems:

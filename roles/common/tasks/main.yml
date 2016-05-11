@@ -1,0 +1,25 @@
+---
+- name: install epel-release
+  yum: name=epel-release state=present
+
+- name: install libselinux-python
+  yum: name=libselinux-python state=present
+
+- name: install git 
+  yum: name=git state=present
+
+- name: create deploy group
+  group: name=deploy
+
+- name: create deploy user
+  user: name=deploy group=deploy
+
+- name: create authorized_keys file
+  copy: src=authorized_keys dest=/home/deploy/.ssh/authorized_keys
+
+- name: change mode authorized_keys file
+  file: path=/home/deploy/.ssh/authorized_keys owner=deploy group=deploy mode=600
+  notify: restart sshd
+
+- name: create /var/www directory
+  file: path=/var/www state=directory owner=deploy group=deploy

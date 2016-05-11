@@ -1,0 +1,13 @@
+---
+- name: copy docker repository definition
+  copy: src=docker.repo dest=/etc/yum.repos.d/docker.repo
+
+- name: install docker-engine
+  yum: name=docker-engine state=present
+  notify: restart docker
+
+- name: download docker-compose
+  get_url: url=https://github.com/docker/compose/releases/download/1.7.0/docker-compose-Linux-x86_64 dest=/usr/local/bin/docker-compose mode=755
+
+- name: add deploy user to docker group
+  user: name=deploy groups=docker append=yes
