@@ -21,9 +21,11 @@ exclude:
   - REVISION
   - Vagrantfile
   - config
+  - docker
   - docker-compose.yml
   - group_vars
   - hosts
+  - log
   - roles
   - site.yml
 
