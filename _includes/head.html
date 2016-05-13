@@ -9,4 +9,10 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ojiry" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}No description{% endif %}" />
+  <meta name="twitter:image" content="{{ site.url }}/images/ogp.png" />
 </head>
