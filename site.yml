@@ -1,6 +1,6 @@
 ---
 - name: Install Docker
-  hosts: docker-server
+  hosts: stg.rynotes.com
   remote_user: vagrant
   become: yes
 
