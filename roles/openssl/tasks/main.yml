@@ -1,0 +1,24 @@
+---
+- name: install openssl 
+  yum: name=openssl-devel state=present
+
+- name: create letsencrypt directory
+  file: path=/etc/letsencrypt/live/stg.rynotes.com state=directory
+
+- name: create privkey.pem
+  shell: openssl genrsa 2048 > privkey.pem
+  args:
+    chdir: /etc/letsencrypt/live/stg.rynotes.com/
+    creates: privkey.pem
+
+- name: create cert.pem
+  shell: openssl req -new -key privkey.pem > cert.pem
+  args:
+    chdir: /etc/letsencrypt/live/stg.rynotes.com/
+    creates: cert.pem
+
+- name: create fullchain.pem
+  shell: "openssl x509 -days 90 -req -subj '/CN=stg.rynotes.com' -signkey privkey.pem < cert.pem > fullchain.pem"
+  args:
+    chdir: /etc/letsencrypt/live/stg.rynotes.com/
+    creates: fullchain.pem
