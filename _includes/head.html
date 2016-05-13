@@ -15,4 +15,11 @@
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}No description{% endif %}" />
   <meta name="twitter:image" content="{{ site.url }}/images/ogp.png" />
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="{{ site.url }}/images/ogp.png">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
+  <meta property="og:locale" content="ja_JP">
 </head>
