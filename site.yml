@@ -6,5 +6,6 @@
 
   roles:
     - common
+    - rbenv
     - openssl
     - docker
