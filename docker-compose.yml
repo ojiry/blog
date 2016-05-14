@@ -15,7 +15,7 @@ services:
     volumes:
       - ./docker/nginx.conf:/etc/nginx/nginx.conf
       - /var/www/blog/current/_site:/usr/share/nginx/html:ro
-      - /etc/letsencrypt/live/stg.rynotes.com:/etc/nginx/certs
+      - /etc/ssl:/etc/nginx/ssl
     depends_on:
       - 'ruby'
     restart: always
