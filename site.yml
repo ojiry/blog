@@ -8,4 +8,5 @@
     - common
     - rbenv
     - { role: openssl, when: "stage == 'staging'" }
+    - nginx
     - docker
