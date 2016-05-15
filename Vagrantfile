@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.limit = "all"
-    ansible.inventory_path = "hosts"
+    ansible.inventory_path = "staging"
     ansible.playbook = "site.yml"
   end
 end

@@ -1,11 +1,11 @@
 ---
 - name: Install Docker
-  hosts: stg.rynotes.com
+  hosts: web
   remote_user: vagrant
   become: yes
 
   roles:
     - common
     - rbenv
-    - openssl
+    - { role: openssl, when: "stage == 'staging'" }
     - docker
