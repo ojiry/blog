@@ -1,2 +1,2 @@
 # blog
-See also blog.ojiry.com
+See also rynotes.com
