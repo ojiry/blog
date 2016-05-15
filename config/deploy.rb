@@ -19,8 +19,7 @@ namespace :deploy do
   after 'symlink:release', :build do
     on roles(:app) do
       within current_path do
-        execute :bundle, :exec, :jekyll, 'build'
-        # execute 'docker-compose up -d'
+        execute :bundle, :exec, :jekyll, 'build --destination public'
       end
     end
   end
