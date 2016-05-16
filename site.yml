@@ -1,5 +1,5 @@
 ---
-- name: Install blog
+- name: Install blog on production
   hosts: rynotes.com
   remote_user: yoshioka
   become: yes
@@ -9,7 +9,7 @@
     - nginx
     - docker
 
-- name: Install blog
+- name: Install blog on staging
   hosts: stg.rynotes.com
   remote_user: vagrant
   become: yes
