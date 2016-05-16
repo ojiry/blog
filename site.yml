@@ -1,6 +1,6 @@
 ---
 - name: Install blog on production
-  hosts: rynotes.com
+  hosts: production
   remote_user: yoshioka
   become: yes
   roles:
@@ -10,7 +10,7 @@
     - docker
 
 - name: Install blog on staging
-  hosts: stg.rynotes.com
+  hosts: staging
   remote_user: vagrant
   become: yes
   roles:
