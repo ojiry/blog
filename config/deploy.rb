@@ -19,7 +19,7 @@ namespace :deploy do
   after 'symlink:release', :build do
     on roles(:app) do
       within current_path do
-        execute :bundle, :exec, :jekyll, 'build --destination public'
+        execute :bundle, :exec, :jekyll, 'build'
       end
     end
   end

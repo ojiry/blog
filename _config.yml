@@ -24,12 +24,15 @@ exclude:
   - docker
   - docker-compose.yml
   - group_vars
+  - host_vars
   - hosts
   - log
   - production
   - roles
   - site.yml
   - staging
+  - webservers.yml
+destination: public
 
 # Plugin settings
 gems:
