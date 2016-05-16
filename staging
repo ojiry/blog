@@ -1,5 +1,2 @@
-[web]
+[stg.rynotes.com]
 stg.rynotes.com
-
-[all:vars]
-stage=staging

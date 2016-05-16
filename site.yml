@@ -1,12 +1,21 @@
 ---
-- name: Install Docker
-  hosts: web
-  remote_user: vagrant
+- name: Install blog
+  hosts: rynotes.com
+  remote_user: yoshioka
   become: yes
-
   roles:
     - common
     - rbenv
-    - { role: openssl, when: "stage == 'staging'" }
+    - nginx
+    - docker
+
+- name: Install blog
+  hosts: stg.rynotes.com
+  remote_user: vagrant
+  become: yes
+  roles:
+    - common
+    - rbenv
+    - openssl
     - nginx
     - docker

@@ -1,5 +1,2 @@
-[web]
+[rynotes.com]
 rynotes.com
-
-[all:vars]
-stage=production
