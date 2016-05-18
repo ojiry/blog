@@ -34,11 +34,8 @@
        dest=/home/deploy/.rbenv/plugins/ruby-build
   become_user: deploy
 
-- name: install ruby 2.3.1
-  shell: bash -lc "rbenv install 2.3.1"
-  args:
-    creates: /home/deploy/.rbenv/versions/2.3.1
-  become_user: deploy
+- name: install host ruby
+  yum: name=ruby state=present
 
 - name: install ruby 2.4.0-dev
   shell: bash -lc "rbenv install 2.4.0-dev"
