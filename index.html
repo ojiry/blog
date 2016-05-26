@@ -3,19 +3,33 @@ layout: default
 ---
 
 <div class="home">
+  <h1>Top</h1>
 
-  <h1 class="page-heading">Posts</h1>
+  <section>
+    <h2>About</h2>
+    <div id="profile">
+      <dl>
+        <dt>{{ site.author }}</dt>
+        <dd>
+          1986 年生まれの Web エンジニア。<br>
+          <a href="{{ "/profile" | prepend: site.baseurl }}">詳しいプロフィール</a>
+        </dd>
+      </dl>
+    </div>
+  </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <section>
+    <h2>Recent Posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 </div>
