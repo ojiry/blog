@@ -11,6 +11,9 @@ server {
     location / {
         root   /var/www/blog/current/public;
         index  index.html index.htm;
+        if ($request_method != GET) {
+            return 403;
+        }
     }
 
     error_page   500 502 503 504  /50x.html;
