@@ -7,5 +7,11 @@
     - common
     - docker
     - rbenv
-    - { role: openssl, when: inventory_file == 'staging' }
     - nginx
+
+- name: install blog
+  hosts: staging
+  remote_user: '{{ remote_user }}'
+  become: yes
+  roles:
+    - openssl
