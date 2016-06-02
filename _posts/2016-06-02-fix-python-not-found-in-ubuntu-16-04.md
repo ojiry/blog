@@ -64,7 +64,7 @@ tasks:
     raw: sudo apt-get install -qq python2.7
 ```
 
-##. ansible_python_interpreter 変数に Python 2.7 のパスを指定
+## ansible_python_interpreter 変数に Python 2.7 のパスを指定
 
 Python 2.7 がインストールできたら、後は Ansible に 2.7 を使うよう指定するだけです。
 
