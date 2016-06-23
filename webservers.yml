@@ -8,6 +8,7 @@
     - docker
     - rbenv
     - nginx
+    - fluentd
 
 - name: install blog
   hosts: staging
