@@ -9,6 +9,7 @@
     - rbenv
     - nginx
     - fluentd
+    - elasticsearch
 
 - name: install blog
   hosts: staging
