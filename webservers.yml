@@ -8,8 +8,9 @@
     - docker
     - rbenv
     - nginx
-    - fluentd
     - elasticsearch
+    - kibana
+    - fluentd
 
 - name: install blog
   hosts: staging

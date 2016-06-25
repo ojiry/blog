@@ -1,0 +1,14 @@
+---
+
+- name: install jdk
+  yum: name=java-1.8.0-openjdk state=present
+
+- name: add gpg key
+  rpm_key: state=present key=https://packages.elastic.co/GPG-KEY-elasticsearch
+
+- name: add kibana repository to yum
+  copy: src=kibana.repo dest=/etc/yum.repos.d/kibana.repo
+
+- name: install kibana
+  yum: name=kibana state=present
+  notify: restart kibana
