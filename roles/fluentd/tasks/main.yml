@@ -8,3 +8,10 @@
 - name: install the toolbelt
   yum: name=td-agent state=present
   notify: restart td-agent
+
+- name: install requirements package
+  yum: name={{ item }} state=present
+  with_items:
+    - automake
+    - libtool
+    - gcc-c++
