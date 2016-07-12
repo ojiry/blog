@@ -16,20 +16,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md 
-  - REVISION
-  - Vagrantfile
   - config
-  - docker
-  - docker-compose.yml
-  - group_vars
-  - host_vars
-  - hosts
   - log
-  - production
-  - roles
-  - site.yml
-  - staging
-  - webservers.yml
+  - node_modules
 destination: public
 
 # Plugin settings

@@ -1,5 +1,0 @@
-[webservers]
-rynotes.com
-
-[production:children]
-webservers

@@ -1,5 +1,0 @@
-[webservers]
-stg.rynotes.com
-
-[staging:children]
-webservers
