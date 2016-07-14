@@ -3,18 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  <h1>Top</h1>
-
   <section>
     <h2>About</h2>
     <div id="profile">
-      <dl>
-        <dt>{{ site.author }}</dt>
-        <dd>
-          1986 年生まれの Web エンジニア。<br>
-          <a href="{{ "/profile" | prepend: site.baseurl }}">詳しいプロフィール</a>
-        </dd>
-      </dl>
+      <div class="avatar">
+        <img src="{{ site.baseurl }}/images/avatar.jpg" alt="ojiry">
+      </div>
+      <div class="detail">
+        <dl>
+          <dt>{{ site.author }}</dt>
+          <dd>
+            1986 年生まれの Web エンジニア。<br>
+            <a href="{{ "/profile" | prepend: site.baseurl }}">詳しいプロフィール</a>
+          </dd>
+        </dl>
+      </div>
     </div>
   </section>
 
