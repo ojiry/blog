@@ -1,10 +1,10 @@
 # config valid only for current version of Capistrano
 lock '3.5.0'
 
-set :application, 'blog'
+set :application, 'rynotes'
 
-# set :repo_url, 'git@github.com:ojiry/blog.git'
-set :repo_url, 'https://github.com/ojiry/blog.git'
+# set :repo_url, 'git@github.com:ojiry/rynotes.git'
+set :repo_url, 'https://github.com/ojiry/rynotes.git'
 
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
