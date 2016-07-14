@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.5.0'
 
-set :application, 'rynotes'
+set :application, 'rynotes.com'
 
 # set :repo_url, 'git@github.com:ojiry/rynotes.git'
 set :repo_url, 'https://github.com/ojiry/rynotes.git'
