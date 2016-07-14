@@ -3,7 +3,7 @@ author: Ryoji Yoshioka
 email: yoshioka.ryoji@gmail.com
 description: GitHub を自然豊かな大草原にするために。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://rynotes.com
+url: "https://rynotes.com"
 twitter_username: ojiry
 github_username: ojiry 
 timezone: Asia/Tokyo
@@ -23,5 +23,4 @@ destination: public
 
 # Plugin settings
 gems:
-  - jekyll-compass
   - jekyll-sitemap

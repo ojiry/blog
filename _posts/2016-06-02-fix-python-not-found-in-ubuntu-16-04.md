@@ -14,7 +14,7 @@ tags:
 
 ## TL;DR
 
-```yaml
+{% highlight yaml linenos %}
 # file: site.yml
 
 ---
@@ -23,14 +23,14 @@ tags:
   tasks:
     - name: install python 2.7
       raw: sudo apt-get install -qq python2.7
-```
+{% endhighlight %}
 
-```yaml
+{% highlight yaml linenos %}
 # file: group_vars/all
 
 ---
 ansible_python_interpreter: /usr/bin/python2.7
-```
+{% endhighlight %}
 
 ## 環境情報
 
@@ -49,25 +49,25 @@ ansible_python_interpreter: /usr/bin/python2.7
 詳細までは調査していないのですが、恐らくサーバ情報を収集するのに Python が必要なのかと。  
 Python 2.7 をインストールする際はこのオプションを切ります。
 
-```yaml
+{% highlight yaml linenos %}
 gather_facts: no
-```
+{% endhighlight %}
 
 ## raw module を使用して Python 2.7 をインストール
 
 apt module を動かす事は出来ません。  
 raw module を使用して ssh 経由でコマンドを実行します。
 
-```yaml
+{% highlight yaml linenos %}
 tasks:
   - name: install python 2.7
     raw: sudo apt-get install -qq python2.7
-```
+{% endhighlight %}
 
 ## ansible_python_interpreter 変数に Python 2.7 のパスを指定
 
 Python 2.7 がインストールできたら、後は Ansible に 2.7 を使うよう指定するだけです。
 
-```yaml
+{% highlight yaml linenos %}
 ansible_python_interpreter: /usr/bin/python2.7
-```
+{% endhighlight %}
