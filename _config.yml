@@ -21,6 +21,9 @@ exclude:
   - node_modules
 destination: public
 
+sass:
+  style: compressed
+
 # Plugin settings
 gems:
   - jekyll-sitemap
