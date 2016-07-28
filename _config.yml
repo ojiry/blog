@@ -5,7 +5,7 @@ description: GitHub を自然豊かな大草原にするために。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rynotes.com"
 twitter_username: ojiry
-github_username: ojiry 
+github_username: ojiry
 timezone: Asia/Tokyo
 permalink: pretty
 
@@ -15,7 +15,7 @@ exclude:
   - Capfile
   - Gemfile
   - Gemfile.lock
-  - README.md 
+  - README.md
   - config
   - log
   - node_modules
