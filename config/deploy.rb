@@ -12,7 +12,7 @@ set :repo_url, 'https://github.com/ojiry/rynotes.git'
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.4.0-dev'
+set :rbenv_ruby, '2.4.0-preview1'
 
 namespace :deploy do
 
