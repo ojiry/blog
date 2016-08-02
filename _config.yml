@@ -19,7 +19,7 @@ exclude:
   - config
   - log
   - node_modules
-destination: public
+  - s3_website.yml
 
 sass:
   style: compressed
