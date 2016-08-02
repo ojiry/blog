@@ -18,7 +18,6 @@ exclude:
   - README.md
   - config
   - log
-  - node_modules
   - s3_website.yml
 
 sass:
