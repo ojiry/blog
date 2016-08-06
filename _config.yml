@@ -12,12 +12,9 @@ permalink: pretty
 # Build settings
 markdown: kramdown
 exclude:
-  - Capfile
   - Gemfile
   - Gemfile.lock
   - README.md
-  - config
-  - log
   - s3_website.yml
 
 sass:
