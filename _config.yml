@@ -15,6 +15,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - Rakefile
   - s3_website.yml
 
 sass:
