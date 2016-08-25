@@ -4,4 +4,5 @@
 .sass-cache
 _site
 s3_website.yml
-vendor/
+/vendor/
+/public/
