@@ -1,5 +1,5 @@
 +++
-date = "2016-06-02T00:00:00+09:00"
+date = "2016-08-20T00:00:00+09:00"
 draft = false
 title = "Rails で webpack を使う方法"
 +++
