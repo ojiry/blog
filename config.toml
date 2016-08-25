@@ -4,7 +4,7 @@ title = "RYNOTES"
 disqusShortname = "rynotes"
 
 [Params]
-subtitle = "I would like to be a layer 3 switch."
+subtitle = "なんちゃって Rails Contributors の日記"
 facebook = "https://facebook.com/ojiry"
 twitter = "https://twitter.com/ojiry"
 github = "https://github.com/ojiry"
@@ -13,3 +13,6 @@ profile = "/images/profile.png"
 copyright = "Written by Ryoji Yoshioka"
 # analytics = "UA-XXXXXXXX-X"
 # shareThis = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+
+[permalinks]
+post = "/:year/:month/:day/:filename/"
