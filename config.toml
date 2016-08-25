@@ -11,8 +11,7 @@ github = "https://github.com/ojiry"
 showsRSS = true
 profile = "/images/profile.png"
 copyright = "Written by Ryoji Yoshioka"
-# analytics = "UA-XXXXXXXX-X"
-# shareThis = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+tagManager = "GTM-5W6LSJ"
 
 [permalinks]
 post = "/:year/:month/:day/:filename/"
