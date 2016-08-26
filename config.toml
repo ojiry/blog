@@ -12,6 +12,7 @@ showsRSS = true
 profile = "/images/profile.png"
 copyright = "Written by Ryoji Yoshioka"
 tagManager = "GTM-5W6LSJ"
+adSense = true
 
 [permalinks]
 post = "/:year/:month/:day/:filename/"
