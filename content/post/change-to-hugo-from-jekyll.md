@@ -1,6 +1,6 @@
 +++
 title = "Jekyll から Hugo へ"
-draft = true
+draft = false
 date = "2016-08-26T23:00:23+09:00"
 +++
 
