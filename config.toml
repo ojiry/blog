@@ -1,7 +1,8 @@
-languageCode = "ja"
 baseurl = "https://rynotes.com/"
-title = "RYNOTES"
 disqusShortname = "rynotes"
+languageCode = "ja"
+theme = 'angels-ladder'
+title = "RYNOTES"
 
 [Params]
 subtitle = "なんちゃって Rails Contributors の日記"
