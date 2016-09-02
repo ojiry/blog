@@ -1,7 +1,7 @@
 +++
-title = "gulp+pug+stylus+webpack を触ってみる"
-draft = false
 date = "2016-08-29T21:38:27+09:00"
+title = "gulp+pug+stylus+webpack を触ってみる"
+tags = [ "gulp", "pug", "stylus", "webpack" ]
 +++
 
 最新のフロントエンド環境の概要を知るために、静的なHPを作るならという目的で開発環境を構築してみました。  
