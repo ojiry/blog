@@ -3,7 +3,7 @@ task default: "rynotes:build"
 namespace :rynotes do
   desc "Build rynotes"
   task :build do
-    sh "bundle exec jekyll build"
+    sh "hugo -t angels-ladder"
   end
 
   desc "Build rynotes and upload _site directory to S3"
