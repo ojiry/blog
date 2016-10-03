@@ -16,13 +16,13 @@ date = "2016-10-03T22:45:23+09:00"
 
 Mac なら Homebrew からインストール可能です。
 
-```shell
+```sh
 $ brew install optipng
 ```
 
 インストールが完了したら、オプションで最適化レベルを指定して画像を圧縮します。
 
-```shell
+```sh
 $ optipng -o7 profile.png
 ```
 
