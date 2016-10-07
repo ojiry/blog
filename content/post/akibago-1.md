@@ -26,7 +26,7 @@ https://github.com/constabulary/gb
 簡単なプログラムを用意して、それぞれのツールで環境を構築して行きました。
 
 最初の govendor はすんなりに動き、機能もシンプルで好印象。  
-次の godep では `godep save` 時にエラーが発生。
+次の godep では `$ godep save` 時にエラーが発生。
 
 時間内にエラーを解決出来ず、2つのツールしか評価出来ずに終わりました。
 
