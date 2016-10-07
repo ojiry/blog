@@ -4,8 +4,6 @@ draft = false
 date = "2016-10-07T12:21:23+09:00"
 +++
 
-# Akiba.go #1
-
 今週の水曜日に Akiba.go という Golang のもくもく会を開催しました。
 
 http://akihabarago.connpass.com/event/37713/
