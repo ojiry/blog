@@ -10,7 +10,7 @@ Google Pixel のために SIM を一枚確保して待ってるというのに�
 
 Google Pixel の単語で検索するのが毎日の日課だ。
 
-Nexus 5 の Bright Red が出た時も惹かれが、今回はそれ以上ですわ。
+Nexus 5 の Bright Red が出た時も惹かれたが、今回はそれ以上ですわ。
 
 買おうと思えば ETOREN とかで買えるんですけどね。
 
