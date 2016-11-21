@@ -12,7 +12,7 @@ Rails 4 までは下記のような結果を返すわけですが。
 
 ```rb
 book = Book.new('published_on(1i)': '', 'published_on(2i)': '11', 'published_on(3i)': '1')
-book.published_on_before_type_cast #=> nil
+book.published_on_before_type_cast # => nil
 ```
 
 それが Rails 5 だとこうなる。
