@@ -3,6 +3,5 @@
 .jekyll-metadata
 .sass-cache
 _site
-s3_website.yml
 /vendor/
 /public/
