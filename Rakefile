@@ -6,7 +6,7 @@ namespace :rynotes do
     sh "hugo -t angels-ladder"
   end
 
-  desc "Build rynotes and upload _site directory to S3"
+  desc "Build rynotes and upload public directory to S3"
   task :deploy do
     Rake::Task["rynotes:build"].invoke
     sh "bundle exec s3_website push"
